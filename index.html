@@ -3,6 +3,7 @@
 <!-- 網頁元素 -->
 <html lang="zh">
 <!-- 網頁資訊 -->
+
 <head>
     <!-- 網頁編碼(有中文字編碼一定要使用UTF-8 避免無中文字體用戶會顯示亂碼問題) -->
     <meta charset="UTF-8">
@@ -15,9 +16,10 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <!-- 網頁內容 -->
+
 <body>
     <!-- 導覽列 -->
-    <!-- nav 為有語意的元素標籤,可升SEO優化 -->
+    <!-- nav 為有語意的元素標籤(可提升SEO優化): 用來放導覽列 -->
     <header>
         <div class="container">
             <nav>
@@ -34,14 +36,46 @@
                         <li><a href="">關於丸龜</a></li>
                         <li><a href="">最新消息</a></li>
                         <li><a href="">聯絡我們</a></li>
-                    </ul> 
+                    </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <section class="banner">
+    <div class="banner"></div>
+
+    <!-- section 有語意的元素標籤: 用來放文章、段落等 -->
+    <section id="about">
+        <p>
+            丸亀製麵於2013年正式登陸台灣， 不論日本當地、以至
+            全球，丸亀製麵都佔據領先地位。
+            堅持以現點現做的做法及讚岐式點餐， 提供顧客最新鮮、
+            最道地的烏龍麵。
+        </p>
+    </section>
+
+    <section id="news">
+        <lu>
+            <li>【四月滿意調查表抽獎公佈】</li>
+            <li>【2020母親節套餐5/5開始於全門市販售】</li>
+            <li>【三月滿意調查表抽獎公佈】</li>
+            <li>【新門市開幕】新竹忠孝大潤發門市４／１新開幕</li>
+            <li>【丸亀製麵 X 台灣可果美】聯名活動上市囉!!</li>
+        </lu>
 
     </section>
 
+    <section id="contact">
+        <p>
+            如果您在本公司用餐上有任何寶貴的意見和建議，或是有任何資訊想了解，
+            歡迎您利用本網站─『聯絡我們』留言反映，或以電郵方式與我們聯絡。
+            我們必將虛心接受並檢討改進，衷心期盼您再度光臨與指教，謝謝。
+        </p>
+        <p>台灣東利多 丸亀製麵 敬上</p>
+        <p>
+            電郵：service@toridoll.com.tw<br/>
+            客服專線：0800-000-063</p>
+    </section>
+
 </body>
+
 </html>
