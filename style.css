@@ -1,7 +1,54 @@
+/* 連結字體檔案 */
+@font-face{
+    /* 字體名稱(可自行命名) */
+    font-family: Ngaan; 
+    /* 字體檔案連結 */
+    src: url(./font/I.Ngaan.ttf);
+}
+
 *{
     padding: 0;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
     font-family: "Microsoft JhengHei",Arial;
+}
+
+#logo{
+    font-family: Ngaan;
+    font-size: 32px;
+    line-height: 60px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 60px;
+    padding: 0 20px;
+}
+.menu{
+    text-align: right;
+}
+/* .menu>ul>li{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 60px;
+} */
+.menu>ul{
+    display: grid;
+    /* grid-template-columns: 設定欄寬,  */
+    /* 均分寬度: repeat(有幾格, 每隔寬度)  */
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: 垂直對齊 */
+    align-items: center;
+    line-height: 60px;
+}
+nav a{
+    text-decoration: none;
+    color: brown;
+    border-bottom: 1.5px solid brown;
+    transition: ease-in 0.3s;
+}
+
+nav a:hover{
+    color:#000;
 }

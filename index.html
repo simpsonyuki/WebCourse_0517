@@ -10,7 +10,7 @@
     <!-- 響應式宣告 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 網頁標題 -->
-    <title>WebCourse 0517</title>
+    <title>丸亀製麵</title>
     <!-- rel: 關聯檔案(stylesheet: 樣式表, css的"ss"全名) -->
     <!-- href連結: 輸入"./" 可自動抓取根目錄檔案 -->
     <link rel="stylesheet" href="./style.css">
@@ -23,7 +23,7 @@
     <header>
         <div class="container">
             <nav>
-                <div id="logo">丸亀製麵</div>
+                <div id="logo">丸龜製麵</div>
                 <!-- 
                 <div class="menu">
                     <a href="">#</a>
@@ -69,6 +69,58 @@
         <p>
             電郵：service@toridoll.com.tw<br/>
             客服專線：0800-000-063</p>
+
+        <form action="">
+            <div class="item">
+                <label for="name">姓名</lable>
+                <input type="text" id="name">
+            </div>
+            <div class="item">
+                <label for="mail">電子信箱</label>
+                <input type="email" name="mail" id="mail">
+            </div>
+            <div class="item">
+                <label for="tel">聯絡手機</label>
+                <input type="tel" id="tel">
+            </div>
+            <div class="item">
+                <label for="atore">選擇店別</label>
+                <select>
+                    <option disabled selected>
+                        請選擇
+                    </option>
+                    <option disabled>
+                        -- 北區 --
+                    </option>
+                    <option value="tapei">台北店</option>
+                    <option value="tapei">新竹店</option>
+                    <option disabled>
+                        -- 中區 --
+                    </option>
+                    <option value="tapei">台中店</option>
+                    <option value="tapei">彰化店</option>
+                    <option disabled>
+                        -- 南區 --
+                    </option>
+                    <option value="tapei">台南店</option>
+                    <option value="tapei">高雄店</option>
+                </select>
+            </div>
+            <div class="item">
+                <label for="content">留言類型</label>
+                <select name="content" id="content">
+                    <option disabled selected>
+                        請選擇
+                    </option>
+                    <option value="advice">訴願或建議</option>
+                    <option value="question">詢問</option>
+                    <option value="other">其他
+
+                    </option>
+                </select>
+            </div>
+            <div class="item"></div> 
+        </form>
     </section>
 
 </body>
