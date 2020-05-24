@@ -24,13 +24,6 @@
         <div class="container">
             <nav>
                 <div id="logo">丸龜製麵</div>
-                <!-- 
-                <div class="menu">
-                    <a href="">#</a>
-                    <a href="">#</a>
-                    <a href="">#</a>  
-                </div> 
-                -->
                 <div class="menu">
                     <ul>
                         <li><a href="">關於丸龜</a></li>
@@ -51,51 +44,85 @@
     <!-- section 有語意的元素標籤: 用來放文章、段落等 -->
     <section id="about">
         <h1>關於丸龜</h1>
-        <p>
-            丸亀製麵於2013年正式登陸台灣，不論日本當地、以至全球，丸亀製麵都佔據領先地位。堅持以現點現做的做法及讚岐式點餐，提供顧客最新鮮、最道地的烏龍麵。
-        </p>
+        <hr>
+        <div class="about">
+            <div class="about-img"></div>
+            <p>
+                丸亀製麵於2013年正式登陸台灣，不論日本當地、以至全球，丸亀製麵都佔據領先地位。堅持以現點現做的做法及讚岐式點餐，提供顧客最新鮮、最道地的烏龍麵。
+            </p>
+        </div>
     </section>
 
     <section id="news">
         <h1>最新消息</h1>
-        <lu>
+        <hr>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="date">2020.05.10</td>
+                    <td>【四月滿意調查表抽獎公佈】</td>
+                </tr>
+                <tr>
+                    <td class="date">2020.05.05</td>
+                    <td>【2020母親節套餐5/5開始於全門市販售】</td>
+                </tr>
+                <tr>
+                    <td class="date">2020.04.30</td>
+                    <td>【三月滿意調查表抽獎公佈】</td>
+                </tr>
+                <tr>
+                    <td class="date">2020.04.21</td>
+                    <td>【新門市開幕】新竹忠孝大潤發門市4/1新開幕</td>
+                </tr>
+                <tr>
+                    <td class="date">2020.04.15</td>
+                    <td>【丸亀製麵 X 台灣可果美】聯名活動上市囉!!</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="more">
+            <a href="#">
+                了解更多
+            </a>
+        </div>      
+        <!-- <ul>
             <li>【四月滿意調查表抽獎公佈】</li>
             <li>【2020母親節套餐5/5開始於全門市販售】</li>
             <li>【三月滿意調查表抽獎公佈】</li>
             <li>【新門市開幕】新竹忠孝大潤發門市4/1新開幕</li>
             <li>【丸亀製麵 X 台灣可果美】聯名活動上市囉!!</li>
-        </lu>
+        </ul> -->
 
     </section>
 
     <section id="contact">
         <h1>聯絡我們</h1>
+        <hr>
         <p>
-            如果您在本公司用餐上有任何寶貴的意見和建議，或是有任何資訊想了解，歡迎您利用本網站─『聯絡我們』留言反映，或以電郵方式與我們聯絡。我們必將虛心接受並檢討改進，衷心期盼您再度光臨與指教，謝謝。
+            如果您在本公司用餐上有任何寶貴的意見和建議或是有任何資訊想了解
+            <br/>
+            歡迎您利用本網站─『聯絡我們』或以電郵方式與我們聯絡。
         </p>
         <p>台灣東利多 丸亀製麵 敬上</p>
         <p>
             電郵：service@toridoll.com.tw<br/>
-            客服專線：0800-000-063</p>
+            客服專線：0800-000-063
+        </p>
 
-        <form action="">
-            <div class="item">
-                <label for="name">姓名</lable>
-                <input type="text" id="name">
+        <form>
+            <div class="item col-s">
+                <!-- <label for="name">姓名</lable> -->
+                <input type="text" name="name" id="name" placeholder="姓名"/>
+            </div>
+            <div class="item col-s">
+                <!-- <label for="mail">電子信箱</label> -->
+                <input type="email" name="mail" id="mail" placeholder="電子信箱">
             </div>
             <div class="item">
-                <label for="mail">電子信箱</label>
-                <input type="email" name="mail" id="mail">
-            </div>
-            <div class="item">
-                <label for="tel">聯絡手機</label>
-                <input type="tel" id="tel">
-            </div>
-            <div class="item">
-                <label for="atore">選擇店別</label>
+                <!-- <label for="atore">選擇店別</label> -->
                 <select>
                     <option disabled selected>
-                        請選擇
+                        店別
                     </option>
                     <option disabled>
                         -- 北區 --
@@ -114,23 +141,15 @@
                     <option value="tapei">高雄店</option>
                 </select>
             </div>
+            
             <div class="item">
-                <label for="content">留言類型</label>
-                <select name="content" id="content">
-                    <option disabled selected>
-                        請選擇
-                    </option>
-                    <option value="advice">訴願或建議</option>
-                    <option value="question">詢問</option>
-                    <option value="other">其他
-                    </option>
-                </select>
-            </div>
-            <div class="item">
-                <label for="comment">內容</label>
-                <textarea id="comment" cols="20"></textarea>
+                <!-- <label for="comment">內容</label> -->
+                <textarea id="comment" cols="20" rows="10" placeholder="留言內容"></textarea>
             </div> 
         </form>
+        <a href="#">
+        <div class="btn">送出</div>
+        </a>
     </section>
 
 </body>
