@@ -34,7 +34,6 @@ nav{
     top: 0;
     /* 上定位之後寬度會跑掉，要另外設定 */
     width: 100%;
-    max-width: 1200px;
     background-color: rgba(0,0,0,0.5);
     /* 設定行高讓內容垂直置中 */
     line-height: 80px;
@@ -73,4 +72,22 @@ nav a:hover{
     background-size: cover;
     height: 100vh;
     background-position: center;
+    /* grid父層設定項目 */
+    display: grid;
+    /* align-items: 垂直對齊 */
+    align-items: center;
+    /* justify-content: 水平對齊 */
+    justify-content: center;
+}
+#banner .title{
+    color: #fff;
+    text-shadow: 1px 5px 3px rgba(0,0,0,0.7);
+}
+.sub-title{
+    font-size: 20px;
+    font-family: Ngaan;
+}
+.main-title{
+    font-size: 120px;
+    font-family: Ngaan;
 }
