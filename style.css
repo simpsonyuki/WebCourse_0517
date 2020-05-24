@@ -13,17 +13,31 @@
     box-sizing: border-box;
     font-family: "Microsoft JhengHei",Arial;
 }
-
+.container{
+    width: 100%;
+}
 #logo{
     font-family: Ngaan;
     font-size: 32px;
-    line-height: 60px;
+    color: #fff;
 }
 nav{
+    z-index: 99;
     display: grid;
+    /* grid-template-columns: 設定欄寬,  */
     grid-template-columns: 30% 70%;
-    height: 60px;
+    height: 80px;
     padding: 0 20px;
+    /* position 定位 */
+    position: fixed;
+    /* 搭配上下左右來設定定位的位置 */
+    top: 0;
+    /* 上定位之後寬度會跑掉，要另外設定 */
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(0,0,0,0.5);
+    /* 設定行高讓內容垂直置中 */
+    line-height: 80px;
 }
 .menu{
     text-align: right;
@@ -31,11 +45,9 @@ nav{
 .menu>ul>li{
     display: inline-block;
     padding: 0 15px;
-    line-height: 60px;
 }
 .menu>ul{
     /* display: grid; */
-    /* grid-template-columns: 設定欄寬,  */
     /* 均分寬度: repeat(有幾格, 每隔寬度)  */
     /* grid-template-columns: repeat(3, 1fr); */
     /* align-items: 垂直對齊 */
@@ -45,12 +57,20 @@ nav{
 
 nav a{
     text-decoration: none;
-    color: brown;
-    border-bottom: 1.5px solid brown;
+    color: #fff;
+    border-bottom: 1.5px solid #fff;
     transition: ease-in 0.3s;
 }
 
 nav a:hover{
-    color:#000;
-    border-bottom: 1.5px solid #000;
+    color:#fff;
+    border-bottom: 1.5px solid #f00;
+}
+
+/* banner */
+#banner{
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
 }
