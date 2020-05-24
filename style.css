@@ -15,8 +15,15 @@
 }
 
 /* header區塊 */
-.container{
-    width: 1200px;
+header .container{
+    background-color: rgba(0,0,0,0.5);
+    height: 80px;
+    padding: 0 40px;
+    /* position 定位 */
+    position: fixed;
+    /* 搭配上下左右來設定定位的位置 */
+    top: 0;
+    width: 100vw;
 }
 #logo{
     font-family: Ngaan;
@@ -24,21 +31,15 @@
     color: #fff;
 }
 nav{
-    z-index: 99;
     display: grid;
     /* grid-template-columns: 設定欄寬*/
     grid-template-columns: 30% 70%;
-    height: 80px;
-    padding: 0 20px;
-    /* position 定位 */
-    position: fixed;
-    /* 搭配上下左右來設定定位的位置 */
-    top: 0;
+    margin: 0 auto;
     /* 上定位之後寬度會跑掉，要另外設定 */
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    max-width: 1200px; 
     /* 設定行高讓內容垂直置中 */
     line-height: 80px;
+    align-items: center;
     justify-content: center;
 }
 .menu{
@@ -100,8 +101,9 @@ nav a:hover{
 /* 主內容區塊 */
 section{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto auto;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 section h1{
     font-size: 28px;
@@ -143,7 +145,7 @@ hr{
     text-align: justify;
     text-justify:inter-ideograph;
     /* 因為父層設定grid-gap會把區塊往右推20p,要把他推回去 */
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 /* news */
@@ -191,4 +193,13 @@ select, textarea{
 }
 .btn:hover{
     background-color: #666;
+}
+
+/* 頁尾 */
+footer{
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
 }
