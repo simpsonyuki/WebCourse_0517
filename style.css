@@ -28,20 +28,21 @@ nav{
 .menu{
     text-align: right;
 }
-/* .menu>ul>li{
+.menu>ul>li{
     display: inline-block;
     padding: 0 15px;
     line-height: 60px;
-} */
+}
 .menu>ul{
-    display: grid;
+    /* display: grid; */
     /* grid-template-columns: 設定欄寬,  */
     /* 均分寬度: repeat(有幾格, 每隔寬度)  */
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     /* align-items: 垂直對齊 */
-    align-items: center;
-    line-height: 60px;
-}
+    /* align-items: center; */
+    /* line-height: 60px; */
+} 
+
 nav a{
     text-decoration: none;
     color: brown;
@@ -51,4 +52,5 @@ nav a{
 
 nav a:hover{
     color:#000;
+    border-bottom: 1.5px solid #000;
 }
